@@ -1,0 +1,51 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "DeptserviceApplication",
+            "request": "launch",
+            "mainClass": "com.example.deptservice.DeptserviceApplication",
+            "projectName": "deptservice"
+        },
+        {
+            "type": "java",
+            "name": "EurekaserverApplication",
+            "request": "launch",
+            "mainClass": "com.example.eurekaserver.EurekaserverApplication",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-DeptserviceApplication<deptservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.deptservice.DeptserviceApplication",
+            "projectName": "deptservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=55710 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=deptservice"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EmployeeserviceApplication<employeeservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.employeeservice.EmployeeserviceApplication",
+            "projectName": "employeeservice",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=58558 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=employeeservice"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-EurekaserverApplication<eurekaserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.example.eurekaserver.EurekaserverApplication",
+            "projectName": "eurekaserver",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=63885 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=eurekaserver"
+        }
+    ]
+}
